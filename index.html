@@ -1,0 +1,2357 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hermes Limo | Luxury Chauffeur Service BC</title>
+
+  <meta name="description"
+
+        content="Hermes Limo provides luxury chauffeur and private transportation throughout British Columbia, including Vancouver, Surrey, Whistler and trips to Seattle.">
+
+  <!-- Premium Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+    }
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+    body {
+
+      background: #080808;
+
+      color: #ffffff;
+
+      font-family: "Montserrat", sans-serif;
+
+      line-height: 1.6;
+
+    }
+
+    a {
+
+      color: inherit;
+
+      text-decoration: none;
+
+    }
+
+    img {
+
+      display: block;
+
+      width: 100%;
+
+    }
+
+    .container {
+
+      width: min(1180px, 90%);
+
+      margin: auto;
+
+    }
+
+    .gold {
+
+      color: #c9a45c;
+
+    }
+
+    /* =========================
+
+       HEADER
+
+    ========================== */
+
+    header {
+
+      position: fixed;
+
+      top: 0;
+
+      left: 0;
+
+      width: 100%;
+
+      z-index: 1000;
+
+      background: rgba(5,5,5,0.88);
+
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+
+    }
+
+    nav {
+
+      min-height: 82px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      gap: 30px;
+
+    }
+
+    .logo {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 31px;
+
+      font-weight: 600;
+
+      letter-spacing: 4px;
+
+      text-transform: uppercase;
+
+    }
+
+    .logo span {
+
+      color: #c9a45c;
+
+    }
+
+    .nav-links {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 28px;
+
+      font-size: 13px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+    }
+
+    .nav-links a {
+
+      transition: .25s;
+
+    }
+
+    .nav-links a:hover {
+
+      color: #c9a45c;
+
+    }
+
+    .nav-book {
+
+      padding: 12px 20px;
+
+      border: 1px solid #c9a45c;
+
+      color: #c9a45c;
+
+    }
+
+    .nav-book:hover {
+
+      background: #c9a45c;
+
+      color: #000 !important;
+
+    }
+
+    /* =========================
+
+       HERO
+
+    ========================== */
+
+    .hero {
+
+      min-height: 100vh;
+
+      display: flex;
+
+      align-items: center;
+
+      background:
+
+        linear-gradient(
+
+          90deg,
+
+          rgba(0,0,0,.92) 0%,
+
+          rgba(0,0,0,.72) 42%,
+
+          rgba(0,0,0,.30) 75%,
+
+          rgba(0,0,0,.18) 100%
+
+        ),
+
+        url("hermes-limo-hero.png");
+
+      background-size: cover;
+
+      background-position: center;
+
+      padding-top: 82px;
+
+    }
+
+    .hero-content {
+
+      max-width: 750px;
+
+    }
+
+    .eyebrow {
+
+      color: #c9a45c;
+
+      font-size: 12px;
+
+      font-weight: 500;
+
+      text-transform: uppercase;
+
+      letter-spacing: 4px;
+
+      margin-bottom: 20px;
+
+    }
+
+    h1 {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(60px, 8vw, 100px);
+
+      line-height: .93;
+
+      font-weight: 500;
+
+      margin-bottom: 27px;
+
+    }
+
+    .hero-description {
+
+      max-width: 650px;
+
+      color: #dedede;
+
+      font-size: 17px;
+
+      margin-bottom: 34px;
+
+    }
+
+    .hero-buttons {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 14px;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      padding: 15px 27px;
+
+      font-size: 12px;
+
+      letter-spacing: 1.5px;
+
+      text-transform: uppercase;
+
+      transition: .25s;
+
+    }
+
+    .btn-gold {
+
+      background: #c9a45c;
+
+      color: #050505;
+
+      border: 1px solid #c9a45c;
+
+    }
+
+    .btn-gold:hover {
+
+      background: #e1bd75;
+
+      border-color: #e1bd75;
+
+    }
+
+    .btn-outline {
+
+      border: 1px solid rgba(255,255,255,.75);
+
+    }
+
+    .btn-outline:hover {
+
+      background: white;
+
+      color: black;
+
+    }
+
+    /* =========================
+
+       TRUST BAR
+
+    ========================== */
+
+    .trust-bar {
+
+      background: #c9a45c;
+
+      color: #080808;
+
+      padding: 22px 0;
+
+    }
+
+    .trust-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      text-align: center;
+
+      gap: 20px;
+
+    }
+
+    .trust-grid div {
+
+      font-size: 12px;
+
+      font-weight: 600;
+
+      letter-spacing: 1.5px;
+
+      text-transform: uppercase;
+
+    }
+
+    /* =========================
+
+       GENERAL SECTIONS
+
+    ========================== */
+
+    section {
+
+      padding: 105px 0;
+
+    }
+
+    .section-heading {
+
+      max-width: 760px;
+
+      margin-bottom: 55px;
+
+    }
+
+    .section-heading h2 {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(44px, 6vw, 70px);
+
+      line-height: 1;
+
+      font-weight: 500;
+
+      margin-bottom: 20px;
+
+    }
+
+    .section-heading p {
+
+      color: #aaa;
+
+      font-size: 15px;
+
+    }
+
+    /* =========================
+
+       ABOUT
+
+    ========================== */
+
+    .about {
+
+      background: #0d0d0d;
+
+    }
+
+    .about-grid {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 80px;
+
+      align-items: center;
+
+    }
+
+    .about h2 {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(44px, 5vw, 68px);
+
+      font-weight: 500;
+
+      line-height: 1;
+
+      margin-bottom: 25px;
+
+    }
+
+    .about p {
+
+      color: #b2b2b2;
+
+      margin-bottom: 18px;
+
+    }
+
+    .about-highlight {
+
+      border-left: 2px solid #c9a45c;
+
+      padding-left: 25px;
+
+      margin-top: 30px;
+
+      color: #eee !important;
+
+    }
+
+    .about-image {
+
+      height: 520px;
+
+      object-fit: cover;
+
+      object-position: center;
+
+      filter: brightness(.72);
+
+    }
+
+    /* =========================
+
+       SERVICES
+
+    ========================== */
+
+    .services {
+
+      background: #080808;
+
+    }
+
+    .service-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+
+    }
+
+    .service-card {
+
+      background: #101010;
+
+      border: 1px solid #242424;
+
+      padding: 38px 30px;
+
+      min-height: 245px;
+
+      transition: .3s;
+
+    }
+
+    .service-card:hover {
+
+      border-color: #c9a45c;
+
+      transform: translateY(-5px);
+
+    }
+
+    .service-number {
+
+      color: #c9a45c;
+
+      font-size: 12px;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 30px;
+
+    }
+
+    .service-card h3 {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 29px;
+
+      font-weight: 500;
+
+      margin-bottom: 12px;
+
+    }
+
+    .service-card p {
+
+      color: #969696;
+
+      font-size: 14px;
+
+    }
+
+    /* =========================
+
+       FLEET
+
+    ========================== */
+
+    .fleet {
+
+      background: #101010;
+
+    }
+
+    .fleet-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 22px;
+
+    }
+
+    .fleet-card {
+
+      background: #080808;
+
+      border: 1px solid #272727;
+
+      padding: 36px;
+
+      transition: .3s;
+
+    }
+
+    .fleet-card:hover {
+
+      border-color: #c9a45c;
+
+    }
+
+    .fleet-type {
+
+      color: #c9a45c;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      font-size: 11px;
+
+      margin-bottom: 18px;
+
+    }
+
+    .fleet-card h3 {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: 34px;
+
+      font-weight: 500;
+
+      line-height: 1.1;
+
+      margin-bottom: 14px;
+
+    }
+
+    .fleet-card p {
+
+      color: #9f9f9f;
+
+      font-size: 14px;
+
+      margin-bottom: 22px;
+
+    }
+
+    .fleet-specs {
+
+      border-top: 1px solid #252525;
+
+      padding-top: 18px;
+
+      display: flex;
+
+      gap: 25px;
+
+      flex-wrap: wrap;
+
+      color: #ddd;
+
+      font-size: 12px;
+
+    }
+
+    .fleet-note {
+
+      margin-top: 35px;
+
+      color: #777;
+
+      font-size: 12px;
+
+    }
+
+    /* =========================
+
+       SERVICE AREA
+
+    ========================== */
+
+    .service-area {
+
+      background:
+
+        linear-gradient(
+
+          rgba(0,0,0,.80),
+
+          rgba(0,0,0,.88)
+
+        ),
+
+        url("hermes-limo-hero.png");
+
+      background-size: cover;
+
+      background-position: center;
+
+      text-align: center;
+
+    }
+
+    .service-area h2 {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(46px, 6vw, 75px);
+
+      font-weight: 500;
+
+      line-height: 1;
+
+      margin-bottom: 25px;
+
+    }
+
+    .service-area p {
+
+      max-width: 850px;
+
+      margin: auto;
+
+      color: #c8c8c8;
+
+    }
+
+    .locations {
+
+      max-width: 850px;
+
+      margin: 35px auto 0;
+
+      color: #c9a45c;
+
+      font-size: 13px;
+
+      letter-spacing: 1.5px;
+
+      line-height: 2.2;
+
+      text-transform: uppercase;
+
+    }
+
+    /* =========================
+
+       QUOTE FORM
+
+    ========================== */
+
+    .quote {
+
+      background: #080808;
+
+    }
+
+    .quote-grid {
+
+      display: grid;
+
+      grid-template-columns: .8fr 1.2fr;
+
+      gap: 80px;
+
+      align-items: start;
+
+    }
+
+    .quote-info h2 {
+
+      font-family: "Cormorant Garamond", serif;
+
+      font-size: clamp(45px, 5vw, 67px);
+
+      line-height: 1;
+
+      font-weight: 500;
+
+      margin-bottom: 25px;
+
+    }
+
+    .quote-info p {
+
+      color: #aaa;
+
+      margin-bottom: 30px;
+
+    }
+
+    .contact-detail {
+
+      margin-bottom: 22px;
+
+    }
+
+    .contact-detail small {
+
+      display: block;
+
+      color: #777;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      font-size: 10px;
+
+      margin-bottom: 5px;
+
+    }
+
+    .contact-detail a {
+
+      color: #c9a45c;
+
+      font-size: 17px;
+
+    }
+
+    .quote-form {
+
+      background: #101010;
+
+      border: 1px solid #252525;
+
+      padding: 40px;
+
+    }
+
+    .form-row {
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 15px;
+
+    }
+
+    .form-group {
+
+      margin-bottom: 17px;
+
+    }
+
+    label {
+
+      display: block;
+
+      color: #b5b5b5;
+
+      font-size: 11px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 8px;
+
+    }
+
+    input,
+
+    select,
+
+    textarea {
+
+      width: 100%;
+
+      padding: 14px;
+
+      background: #080808;
+
+      border: 1px solid #303030;
+
+      color: white;
+
+      font-family: "Montserrat", sans-serif;
+
+      font-size: 14px;
+
+      outline: none;
+
+    }
+
+    input:focus,
+
+    select:focus,
+
+    textarea:focus {
+
+      border-color: #c9a45c;
+
+    }
+
+    textarea {
+
+      resize: vertical;
+
+      min-height: 125px;
+
+    }
+
+    select option {
+
+      background: #080808;
+
+    }
+
+    .submit-button {
+
+      width: 100%;
+
+      border: none;
+
+      cursor: pointer;
+
+      background: #c9a45c;
+
+      color: #050505;
+
+      padding: 16px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
+
+      font-size: 12px;
+
+      font-weight: 600;
+
+    }
+
+    .submit-button:hover {
+
+      background: #e1bd75;
+
+    }
+
+    .form-note {
+
+      margin-top: 15px;
+
+      color: #707070;
+
+      font-size: 11px;
+
+    }
+
+    /* =========================
+
+       FOOTER
+
+    ========================== */
+
+    footer {
+
+      background: #040404;
+
+      border-top: 1px solid #222;
+
+      padding: 65px 0 30px;
+
+    }
+
+    .footer-grid {
+
+      display: grid;
+
+      grid-template-columns: 2fr 1fr 1fr;
+
+      gap: 60px;
+
+      margin-bottom: 50px;
+
+    }
+
+    .footer-description {
+
+      color: #858585;
+
+      max-width: 430px;
+
+      margin-top: 18px;
+
+      font-size: 14px;
+
+    }
+
+    footer h3 {
+
+      font-size: 13px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      margin-bottom: 20px;
+
+    }
+
+    .footer-links {
+
+      display: flex;
+
+      flex-direction: column;
+
+      gap: 10px;
+
+    }
+
+    .footer-links a {
+
+      color: #8f8f8f;
+
+      font-size: 13px;
+
+    }
+
+    .footer-links a:hover {
+
+      color: #c9a45c;
+
+    }
+
+    .copyright {
+
+      border-top: 1px solid #1d1d1d;
+
+      padding-top: 25px;
+
+      color: #666;
+
+      font-size: 11px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+
+      flex-wrap: wrap;
+
+    }
+
+    /* =========================
+
+       MOBILE
+
+    ========================== */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+
+        display: none;
+
+      }
+
+      .trust-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+      .about-grid,
+
+      .service-grid,
+
+      .fleet-grid,
+
+      .quote-grid,
+
+      .footer-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .about-grid,
+
+      .quote-grid {
+
+        gap: 45px;
+
+      }
+
+      .about-image {
+
+        height: 400px;
+
+      }
+
+      section {
+
+        padding: 80px 0;
+
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      nav {
+
+        min-height: 70px;
+
+      }
+
+      .logo {
+
+        font-size: 24px;
+
+      }
+
+      .hero {
+
+        min-height: 92vh;
+
+        background-position: 65% center;
+
+      }
+
+      h1 {
+
+        font-size: 58px;
+
+      }
+
+      .hero-description {
+
+        font-size: 15px;
+
+      }
+
+      .hero-buttons {
+
+        flex-direction: column;
+
+      }
+
+      .btn {
+
+        width: 100%;
+
+        text-align: center;
+
+      }
+
+      .trust-grid {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .form-row {
+
+        grid-template-columns: 1fr;
+
+      }
+
+      .quote-form {
+
+        padding: 25px 20px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- =========================
+
+     HEADER
+
+========================== -->
+
+<header>
+
+  <div class="container">
+
+    <nav>
+
+      <a href="#home" class="logo">
+
+        HERMES <span>LIMO</span>
+
+      </a>
+
+      <div class="nav-links">
+
+        <a href="#services">Services</a>
+
+        <a href="#fleet">Fleet</a>
+
+        <a href="#about">About</a>
+
+        <a href="#contact">Contact</a>
+
+        <a href="#quote" class="nav-book">
+
+          Request a Quote
+
+        </a>
+
+      </div>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<!-- =========================
+
+     HERO
+
+========================== -->
+
+<section class="hero" id="home">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+
+        Private Chauffeur • British Columbia
+
+      </div>
+
+      <h1>
+
+        Travel Without<br>
+
+        Compromise.
+
+      </h1>
+
+      <p class="hero-description">
+
+        Premium private transportation for airport transfers,
+
+        corporate travel, weddings, special events and long-distance
+
+        journeys throughout British Columbia and to Seattle.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#quote" class="btn btn-gold">
+
+          Request a Quote
+
+        </a>
+
+        <a href="tel:+16044990005" class="btn btn-outline">
+
+          Call 604-499-0005
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+
+     TRUST BAR
+
+========================== -->
+
+<div class="trust-bar">
+
+  <div class="container trust-grid">
+
+    <div>Available 24/7</div>
+
+    <div>Professional Chauffeur Service</div>
+
+    <div>Premium 2026 Fleet</div>
+
+    <div>BC & Seattle Transportation</div>
+
+  </div>
+
+</div>
+
+<!-- =========================
+
+     ABOUT
+
+========================== -->
+
+<section class="about" id="about">
+
+  <div class="container">
+
+    <div class="about-grid">
+
+      <div>
+
+        <div class="eyebrow">
+
+          The Hermes Experience
+
+        </div>
+
+        <h2>
+
+          The Journey Matters.
+
+        </h2>
+
+        <p>
+
+          Hermes Limo provides premium private transportation built
+
+          around comfort, professionalism and dependable service.
+
+        </p>
+
+        <p>
+
+          Whether you're travelling to the airport, attending an
+
+          important business meeting, celebrating your wedding day
+
+          or planning a long-distance journey, our goal is to make
+
+          every part of your transportation experience effortless.
+
+        </p>
+
+        <p>
+
+          Our modern fleet offers transportation options for
+
+          individual travellers, families, executives and larger groups.
+
+        </p>
+
+        <p class="about-highlight">
+
+          From Vancouver and the Lower Mainland to destinations
+
+          throughout British Columbia and Seattle, your journey
+
+          begins with Hermes.
+
+        </p>
+
+      </div>
+
+      <img
+
+        src="hermes-limo-hero.png"
+
+        class="about-image"
+
+        alt="Hermes Limo luxury vehicle fleet in British Columbia"
+
+      >
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+
+     SERVICES
+
+========================== -->
+
+<section class="services" id="services">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+
+        Our Services
+
+      </div>
+
+      <h2>
+
+        Transportation Tailored to You.
+
+      </h2>
+
+      <p>
+
+        Professional private transportation for business,
+
+        leisure and life's most important occasions.
+
+      </p>
+
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+
+        <div class="service-number">01</div>
+
+        <h3>Airport Transfers</h3>
+
+        <p>
+
+          Private airport pickup and drop-off transportation
+
+          for convenient and comfortable travel.
+
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <div class="service-number">02</div>
+
+        <h3>Corporate Travel</h3>
+
+        <p>
+
+          Professional chauffeur transportation for executives,
+
+          business meetings, conferences and corporate travel.
+
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <div class="service-number">03</div>
+
+        <h3>Weddings</h3>
+
+        <p>
+
+          Elegant private transportation for couples,
+
+          wedding parties and guests on your special day.
+
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <div class="service-number">04</div>
+
+        <h3>Special Events</h3>
+
+        <p>
+
+          Premium transportation for birthdays,
+
+          anniversaries, celebrations and private events.
+
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <div class="service-number">05</div>
+
+        <h3>Concerts & Events</h3>
+
+        <p>
+
+          Enjoy your evening without worrying about parking,
+
+          traffic or transportation home.
+
+        </p>
+
+      </div>
+
+      <div class="service-card">
+
+        <div class="service-number">06</div>
+
+        <h3>Long-Distance Travel</h3>
+
+        <p>
+
+          Private transportation throughout British Columbia,
+
+          including long-distance journeys and trips to Seattle.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+
+     FLEET
+
+========================== -->
+
+<section class="fleet" id="fleet">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="eyebrow">
+
+        The Fleet
+
+      </div>
+
+      <h2>
+
+        Premium Vehicles.<br>
+
+        Exceptional Comfort.
+
+      </h2>
+
+      <p>
+
+        Explore our 2026 fleet. Individual vehicle photography
+
+        will be added as our fleet gallery is completed.
+
+      </p>
+
+    </div>
+
+    <div class="fleet-grid">
+
+      <div class="fleet-card">
+
+        <div class="fleet-type">
+
+          Luxury SUV
+
+        </div>
+
+        <h3>
+
+          2026 GMC Yukon Denali XL
+
+        </h3>
+
+        <p>
+
+          Premium full-size SUV transportation with generous
+
+          passenger and luggage space.
+
+        </p>
+
+        <div class="fleet-specs">
+
+          <span>Luxury SUV</span>
+
+          <span>2026 Model</span>
+
+          <span>Extended Length</span>
+
+        </div>
+
+      </div>
+
+      <div class="fleet-card">
+
+        <div class="fleet-type">
+
+          Luxury SUV
+
+        </div>
+
+        <h3>
+
+          2026 Chevrolet Suburban
+
+        </h3>
+
+        <p>
+
+          Spacious full-size SUV suited for airport travel,
+
+          families, groups and longer journeys.
+
+        </p>
+
+        <div class="fleet-specs">
+
+          <span>Luxury SUV</span>
+
+          <span>2026 Model</span>
+
+          <span>Group Travel</span>
+
+        </div>
+
+      </div>
+
+      <div class="fleet-card">
+
+        <div class="fleet-type">
+
+          Luxury SUV
+
+        </div>
+
+        <h3>
+
+          2026 GMC Yukon XL Elevation
+
+        </h3>
+
+        <p>
+
+          Modern full-size SUV offering premium comfort,
+
+          additional cargo room and versatile private transportation.
+
+        </p>
+
+        <div class="fleet-specs">
+
+          <span>Luxury SUV</span>
+
+          <span>2026 Model</span>
+
+          <span>Extended Length</span>
+
+        </div>
+
+      </div>
+
+      <div class="fleet-card">
+
+        <div class="fleet-type">
+
+          Business Sedan
+
+        </div>
+
+        <h3>
+
+          2026 Cadillac LYRIQ
+
+        </h3>
+
+        <p>
+
+          Modern all-electric Cadillac transportation designed
+
+          for executive travel, airport transfers and private journeys.
+
+        </p>
+
+        <div class="fleet-specs">
+
+          <span>Business Class</span>
+
+          <span>2026 Model</span>
+
+          <span>Electric</span>
+
+        </div>
+
+      </div>
+
+      <div class="fleet-card">
+
+        <div class="fleet-type">
+
+          Group Transportation
+
+        </div>
+
+        <h3>
+
+          Mercedes-Benz Sprinter Van
+
+        </h3>
+
+        <p>
+
+          Spacious private group transportation for events,
+
+          airport transfers, corporate travel and longer journeys.
+
+        </p>
+
+        <div class="fleet-specs">
+
+          <span>Up to 12 Passengers*</span>
+
+          <span>Group Travel</span>
+
+          <span>Private Chauffeur</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <p class="fleet-note">
+
+      * Mercedes-Benz Sprinter passenger capacity is currently
+
+      listed as up to 12 passengers and will be updated once
+
+      final vehicle configuration is confirmed.
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- =========================
+
+     SERVICE AREA
+
+========================== -->
+
+<section class="service-area">
+
+  <div class="container">
+
+    <div class="eyebrow">
+
+      Where We Go
+
+    </div>
+
+    <h2>
+
+      British Columbia & Beyond.
+
+    </h2>
+
+    <p>
+
+      Hermes Limo provides private chauffeur transportation
+
+      throughout British Columbia, with long-distance and
+
+      cross-border trips to Seattle available upon request.
+
+    </p>
+
+    <div class="locations">
+
+      Vancouver • Surrey • Richmond • Burnaby • Delta • Langley
+
+      • Abbotsford • Whistler • Victoria • Kelowna • British Columbia
+
+      • Seattle
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+
+     QUOTE FORM
+
+========================== -->
+
+<section class="quote" id="quote">
+
+  <div class="container">
+
+    <div class="quote-grid">
+
+      <div class="quote-info">
+
+        <div class="eyebrow">
+
+          Request Transportation
+
+        </div>
+
+        <h2>
+
+          Where Can We Take You?
+
+        </h2>
+
+        <p>
+
+          Tell us about your trip and we'll get back to you
+
+          with availability and transportation options.
+
+        </p>
+
+        <div class="contact-detail">
+
+          <small>Call Us</small>
+
+          <a href="tel:+16044990005">
+
+            604-499-0005
+
+          </a>
+
+        </div>
+
+        <div class="contact-detail">
+
+          <small>Email</small>
+
+          <a href="mailto:hermeslimobc@gmail.com">
+
+            hermeslimobc@gmail.com
+
+          </a>
+
+        </div>
+
+        <div class="contact-detail">
+
+          <small>Availability</small>
+
+          <span>
+
+            24 Hours / 7 Days
+
+          </span>
+
+        </div>
+
+      </div>
+
+      <!-- FORMSPREE QUOTE FORM -->
+
+      <form
+
+        class="quote-form"
+
+        action="https://formspree.io/f/mppzdpqk"
+
+        method="POST"
+
+      >
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="name">
+
+              Full Name
+
+            </label>
+
+            <input
+
+              id="name"
+
+              type="text"
+
+              name="name"
+
+              required
+
+              placeholder="Your name"
+
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="phone">
+
+              Phone Number
+
+            </label>
+
+            <input
+
+              id="phone"
+
+              type="tel"
+
+              name="phone"
+
+              required
+
+              placeholder="604-000-0000"
+
+            >
+
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="email">
+
+              Email
+
+            </label>
+
+            <input
+
+              id="email"
+
+              type="email"
+
+              name="email"
+
+              required
+
+              placeholder="Your email"
+
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="passengers">
+
+              Passengers
+
+            </label>
+
+            <input
+
+              id="passengers"
+
+              type="number"
+
+              name="passengers"
+
+              min="1"
+
+              placeholder="Number of passengers"
+
+            >
+
+          </div>
+
+        </div>
+
+        <div class="form-row">
+
+          <div class="form-group">
+
+            <label for="date">
+
+              Pickup Date
+
+            </label>
+
+            <input
+
+              id="date"
+
+              type="date"
+
+              name="pickup_date"
+
+              required
+
+            >
+
+          </div>
+
+          <div class="form-group">
+
+            <label for="time">
+
+              Pickup Time
+
+            </label>
+
+            <input
+
+              id="time"
+
+              type="time"
+
+              name="pickup_time"
+
+            >
+
+          </div>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="service">
+
+            Service
+
+          </label>
+
+          <select
+
+            id="service"
+
+            name="service"
+
+            required
+
+          >
+
+            <option value="">
+
+              Select a service
+
+            </option>
+
+            <option>
+
+              Airport Transfer
+
+            </option>
+
+            <option>
+
+              Corporate Travel
+
+            </option>
+
+            <option>
+
+              Wedding
+
+            </option>
+
+            <option>
+
+              Special Event
+
+            </option>
+
+            <option>
+
+              Concert / Event
+
+            </option>
+
+            <option>
+
+              Long-Distance Trip
+
+            </option>
+
+            <option>
+
+              Seattle Trip
+
+            </option>
+
+            <option>
+
+              Other
+
+            </option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="vehicle">
+
+            Preferred Vehicle
+
+          </label>
+
+          <select
+
+            id="vehicle"
+
+            name="vehicle"
+
+          >
+
+            <option value="">
+
+              No preference
+
+            </option>
+
+            <option>
+
+              2026 GMC Yukon Denali XL
+
+            </option>
+
+            <option>
+
+              2026 Chevrolet Suburban
+
+            </option>
+
+            <option>
+
+              2026 GMC Yukon XL Elevation
+
+            </option>
+
+            <option>
+
+              2026 Cadillac LYRIQ
+
+            </option>
+
+            <option>
+
+              Mercedes-Benz Sprinter Van
+
+            </option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="pickup">
+
+            Pickup Location
+
+          </label>
+
+          <input
+
+            id="pickup"
+
+            type="text"
+
+            name="pickup_location"
+
+            required
+
+            placeholder="Pickup address, airport or location"
+
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="destination">
+
+            Destination
+
+          </label>
+
+          <input
+
+            id="destination"
+
+            type="text"
+
+            name="destination"
+
+            required
+
+            placeholder="Where are you going?"
+
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="message">
+
+            Trip Details
+
+          </label>
+
+          <textarea
+
+            id="message"
+
+            name="message"
+
+            placeholder="Flight number, luggage, additional stops, special requests or anything else we should know..."
+
+          ></textarea>
+
+        </div>
+
+        <input
+
+          type="hidden"
+
+          name="_subject"
+
+          value="New Hermes Limo Quote Request"
+
+        >
+
+        <button
+
+          type="submit"
+
+          class="submit-button"
+
+        >
+
+          Send Quote Request
+
+        </button>
+
+        <p class="form-note">
+
+          Your request will be sent directly to Hermes Limo.
+
+          A quote request does not confirm a reservation.
+
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+
+     FOOTER
+
+========================== -->
+
+<footer id="contact">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="logo">
+
+          HERMES <span>LIMO</span>
+
+        </div>
+
+        <p class="footer-description">
+
+          Premium private chauffeur transportation throughout
+
+          British Columbia and select cross-border destinations.
+
+        </p>
+
+      </div>
+
+      <div>
+
+        <h3>Explore</h3>
+
+        <div class="footer-links">
+
+          <a href="#about">About</a>
+
+          <a href="#services">Services</a>
+
+          <a href="#fleet">Fleet</a>
+
+          <a href="#quote">Request a Quote</a>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <h3>Contact</h3>
+
+        <div class="footer-links">
+
+          <a href="tel:+16044990005">
+
+            604-499-0005
+
+          </a>
+
+          <a href="mailto:hermeslimobc@gmail.com">
+
+            hermeslimobc@gmail.com
+
+          </a>
+
+          <a href="#quote">
+
+            Request a Quote
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="copyright">
+
+      <span>
+
+        © 2026 Hermes Limo. All Rights Reserved.
+
+      </span>
+
+      <span>
+
+        Private Chauffeur Transportation • British Columbia
+
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
