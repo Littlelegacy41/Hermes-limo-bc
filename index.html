@@ -1346,6 +1346,39 @@
 
     }
 
+    .form-group {
+  position: relative;
+}
+
+.address-suggestions {
+  position: relative;
+  z-index: 20;
+  background: #141414;
+  border: 1px solid #c9a45c;
+}
+
+.address-suggestions:empty {
+  display: none;
+}
+
+.address-option {
+  display: block;
+  width: 100%;
+  padding: 13px 14px;
+  border: 0;
+  border-bottom: 1px solid #333;
+  background: #141414;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.address-option:hover,
+.address-option:focus {
+  background: #302719;
+}
   </style>
 
 </head>
@@ -2541,11 +2574,11 @@
           >
 
         </div>
-
+<div id="pickup-suggestions" class="address-suggestions"></div>
         <div class="form-group">
 
           <label for="destination">
-
+<div id="destination-suggestions" class="address-suggestions"></div>
             Destination
 
           </label>
@@ -2761,7 +2794,80 @@
     }
 
   }
+const GEOAPIFY_KEY = "3cf956ef49da455388a7561fc77a45fe";
 
+function setupAddressAutocomplete(inputId, suggestionsId) {
+  const input = document.getElementById(inputId);
+  const suggestions = document.getElementById(suggestionsId);
+
+  if (!input || !suggestions) return;
+
+  let timer;
+  let controller;
+
+  input.addEventListener("input", () => {
+    clearTimeout(timer);
+    if (controller) controller.abort();
+
+    suggestions.replaceChildren();
+    const search = input.value.trim();
+
+    if (search.length < 3) return;
+
+    timer = setTimeout(async () => {
+      controller = new AbortController();
+
+      try {
+        const url = new URL("https://api.geoapify.com/v1/geocode/autocomplete");
+        url.searchParams.set("text", search);
+        url.searchParams.set("format", "json");
+        url.searchParams.set("limit", "5");
+        url.searchParams.set("filter", "countrycode:ca,us");
+        url.searchParams.set("apiKey", GEOAPIFY_KEY);
+
+        const response = await fetch(url, {
+          signal: controller.signal
+        });
+
+        if (!response.ok) throw new Error("Address lookup failed");
+
+        const data = await response.json();
+
+        // Ignore results if the customer has typed something else.
+        if (input.value.trim() !== search) return;
+
+        suggestions.replaceChildren();
+
+        (data.results || []).forEach(place => {
+          const option = document.createElement("button");
+          option.type = "button";
+          option.className = "address-option";
+          option.textContent = place.formatted;
+
+          option.addEventListener("click", () => {
+            input.value = place.formatted;
+            suggestions.replaceChildren();
+          });
+
+          suggestions.appendChild(option);
+        });
+      } catch (error) {
+        if (error.name !== "AbortError") {
+          console.error("Geoapify autocomplete:", error);
+        }
+      }
+    }, 350);
+  });
+
+  document.addEventListener("click", event => {
+    if (event.target !== input && !suggestions.contains(event.target)) {
+      suggestions.replaceChildren();
+    }
+  });
+}
+
+setupAddressAutocomplete("pickup", "pickup-suggestions");
+setupAddressAutocomplete("destination", "destination-suggestions");
 </script>
 
 </body>
